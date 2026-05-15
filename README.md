@@ -39,7 +39,6 @@ e gerir os dados dos clientes registados.
 
 c) Funcionalidades por Utilizador
 
-teste
 
 Cliente Visitante:
 - Consultar o catálogo de produtos
