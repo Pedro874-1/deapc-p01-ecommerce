@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha Conta — ShopOnline</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>ShopOnline</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="cliente.html">Login</a>
+            <a href="carrinho.html">Carrinho (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>A minha Conta</h2>
+
+        <div class="pagina-conta">
+
+            <section class="caixa-formulario">
+                <h3>Iniciar Sessão</h3>
+                <div class="formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="o-seu-email@exemplo.com">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="A sua password">
+
+                    <button class="botao">Entrar</button>
+                    <p>Não tem conta? <a href="#">Registe-se aqui</a></p>
+                </div>
+            </section>
+
+            <section class="caixa-formulario">
+                <h3>Histórico de Encomendas</h3>
+                <p>Faça login para ver as suas encomendas.</p>
+
+                <table class="tabela-encomendas">
+                    <thead>
+                        <tr>
+                            <th>Nº</th>
+                            <th>Data</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>12/05/2026</td>
+                            <td>344,99 €</td>
+                            <td>Enviado</td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>03/04/2026</td>
+                            <td>23,50 €</td>
+                            <td>Entregue</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Os meus Dados</h3>
+                <div class="formulario">
+                    <label for="nome-conta">Nome:</label>
+                    <input type="text" id="nome-conta" value="João Silva">
+
+                    <label for="email-conta">Email:</label>
+                    <input type="email" id="email-conta" value="joao@email.com">
+
+                    <button class="botao">Guardar alterações</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopOnline. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

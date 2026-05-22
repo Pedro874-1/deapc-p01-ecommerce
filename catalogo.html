@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo — ShopOnline</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>ShopOnline</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="cliente.html">Login</a>
+            <a href="carrinho.html">Carrinho (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Catálogo de Produtos</h2>
+
+        <div class="pagina-catalogo">
+
+            <aside class="filtros">
+                <h3>Filtrar por</h3>
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria">
+                    <option value="">Todas</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="vestuario">Vestuário</option>
+                    <option value="desporto">Desporto</option>
+                    <option value="livros">Livros</option>
+                </select>
+
+                <label for="preco-min">Preço mínimo (€):</label>
+                <input type="number" id="preco-min" placeholder="0">
+
+                <label for="preco-max">Preço máximo (€):</label>
+                <input type="number" id="preco-max" placeholder="500">
+
+                <button class="botao">Aplicar</button>
+            </aside>
+
+            <section class="lista-produtos">
+                <p>8 produtos encontrados</p>
+
+                <div class="grelha">
+
+                    <div class="cartao">
+                        <img src="images/produto1.jpg" alt="Smartphone">
+                        <h3>Smartphone XPro</h3>
+                        <p class="categoria">Electrónica</p>
+                        <p class="preco">299,99 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                    <div class="cartao">
+                        <img src="images/produto2.jpg" alt="Auriculares">
+                        <h3>Auriculares Wireless</h3>
+                        <p class="categoria">Electrónica</p>
+                        <p class="preco">45,00 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                    <div class="cartao">
+                        <img src="images/produto3.jpg" alt="Tenis">
+                        <h3>Ténis Running</h3>
+                        <p class="categoria">Desporto</p>
+                        <p class="preco">59,50 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                    <div class="cartao">
+                        <img src="images/produto4.jpg" alt="Livro">
+                        <h3>Livro HTML &amp; CSS</h3>
+                        <p class="categoria">Livros</p>
+                        <p class="preco">18,99 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                    <div class="cartao">
+                        <img src="images/produto5.jpg" alt="Camisola">
+                        <h3>Camisola Desportiva</h3>
+                        <p class="categoria">Vestuário</p>
+                        <p class="preco">24,99 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                    <div class="cartao">
+                        <img src="images/produto6.jpg" alt="Tablet">
+                        <h3>Tablet Slim 10"</h3>
+                        <p class="categoria">Electrónica</p>
+                        <p class="preco">189,00 €</p>
+                        <a href="produto.html" class="botao">Ver produto</a>
+                    </div>
+
+                </div>
+
+                <div class="paginacao">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ShopOnline. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

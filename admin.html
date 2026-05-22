@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin — ShopOnline</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <header class="header-admin">
+        <h1>ShopOnline — Administração</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#encomendas">Encomendas</a>
+            <a href="#clientes">Clientes</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="produtos">
+            <div class="secao-titulo">
+                <h2>Gestão de Produtos</h2>
+                <button class="botao">+ Adicionar Produto</button>
+            </div>
+
+            <table class="tabela-admin">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                        <th>Stock</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Smartphone XPro</td>
+                        <td>Electrónica</td>
+                        <td>299,99 €</td>
+                        <td>15</td>
+                        <td>
+                            <button class="botao-editar">Editar</button>
+                            <button class="botao-apagar">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Auriculares Wireless</td>
+                        <td>Electrónica</td>
+                        <td>45,00 €</td>
+                        <td>42</td>
+                        <td>
+                            <button class="botao-editar">Editar</button>
+                            <button class="botao-apagar">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Ténis Running</td>
+                        <td>Desporto</td>
+                        <td>59,50 €</td>
+                        <td>3</td>
+                        <td>
+                            <button class="botao-editar">Editar</button>
+                            <button class="botao-apagar">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="encomendas">
+            <h2>Gestão de Encomendas</h2>
+
+            <table class="tabela-admin">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>João Silva</td>
+                        <td>12/05/2026</td>
+                        <td>344,99 €</td>
+                        <td>
+                            <select>
+                                <option>Pendente</option>
+                                <option selected>Enviado</option>
+                                <option>Entregue</option>
+                            </select>
+                        </td>
+                        <td><button class="botao-editar">Guardar</button></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Ana Costa</td>
+                        <td>03/04/2026</td>
+                        <td>23,50 €</td>
+                        <td>
+                            <select>
+                                <option>Pendente</option>
+                                <option>Enviado</option>
+                                <option selected>Entregue</option>
+                            </select>
+                        </td>
+                        <td><button class="botao-editar">Guardar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="clientes">
+            <h2>Clientes Registados</h2>
+
+            <table class="tabela-admin">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Encomendas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>U001</td>
+                        <td>João Silva</td>
+                        <td>joao@email.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>U002</td>
+                        <td>Ana Costa</td>
+                        <td>ana@email.com</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
