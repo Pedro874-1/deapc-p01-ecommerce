@@ -1,0 +1,71 @@
+commit ef3af1c30bc9cb9a655c317f8e602d2a4e2e34c5
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 29 12:44:10 2026 +0100
+
+    Adiciona scripts PHP, base de dados SQLite3 e paginas dinamicas - Guiao W2
+
+commit 1d8342870f85d5f337caebb82959a37b4b58b1d7
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 22 13:10:24 2026 +0100
+
+     Adiciona log do repositório
+
+commit 299f3211a8edfe6c94fa351c957faa0744e848de
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 22 12:37:52 2026 +0100
+
+    Adiciona paginas HTML e CSS - Guiao w1
+
+commit 025cd8d6ff32eea3ccc09109cdfe7fe82ef1e856
+Author: Pedro874-1 <josepedropacheco721@gmail.com>
+Date:   Fri May 22 11:32:14 2026 +0100
+
+    Create .gitkeep
+
+commit 587178bb833be7d77f6b88b8a9ad61f5cac8cd50
+Author: Pedro874-1 <josepedropacheco721@gmail.com>
+Date:   Fri May 22 11:31:40 2026 +0100
+
+    Create .gitkeep
+
+commit 18b6e32f3a47516811b7ae71ea0db88326463ba0
+Author: Pedro874-1 <josepedropacheco721@gmail.com>
+Date:   Fri May 22 11:28:38 2026 +0100
+
+    Create .gitkeep
+
+commit d6dad639551671685955596f6ed02cfa82b1b064
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 15 12:46:02 2026 +0100
+
+    boas3
+
+commit 20b4e290278f764b2cb2c738b0fe1e0f4609ac03
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 15 12:44:58 2026 +0100
+
+    boas2
+
+commit b6a8be8d45d8c9ce9846800f13c12958efa92433
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 15 12:42:43 2026 +0100
+
+    boas
+
+commit 939854ab3712c26cb817c1d6c9a057610e86e221
+Author: Pedro874-1 <josepedropacheco721@gmail.com>
+Date:   Fri May 15 12:12:12 2026 +0100
+
+    Update README.md
+
+commit 5ba78660dfde31462c70fd7af4c283ea85b7f222
+Author: Pedro Pacheco <josepedropacheco721@gmail.com>
+Date:   Fri May 15 12:11:04 2026 +0100
+
+    teste
+
+commit 0face20c5b198d4f8ef7d977bc192457d5a9e500
+Author: Pedro874-1 <josepedropacheco721@gmail.com>
+Date:   Fri May 15 11:55:29 2026 +0100
+
+    Initial commit
