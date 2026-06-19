@@ -46,7 +46,7 @@ unset($db);
             <a href="index.html">Início</a>
             <a href="produtos.php">Catálogo</a>
             <a href="cliente.html">Login</a>
-            <a href="carrinho.html">Carrinho</a>
+            <a href="carrinho.html">Carrinho (<span id="contador-carrinho">0</span>)</a>
         </nav>
     </header>
 
@@ -80,7 +80,7 @@ unset($db);
                     <label for="quantidade">Quantidade:</label>
                     <input type="number" id="quantidade" value="1" min="1"
                            max="<?php echo $produto['stock']; ?>">
-                    <button class="botao">Adicionar ao Carrinho</button>
+                    <button id="botao-adicionar" type="button" class="botao">Adicionar ao Carrinho</button>
                 </div>
             </div>
 
@@ -91,5 +91,8 @@ unset($db);
         <p>&copy; 2026 ShopOnline.</p>
     </footer>
 
+<script src="scripts/validacao.js"></script>
+    <script src="scripts/interatividade.js"></script>
 </body>
 </html>
+

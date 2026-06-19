@@ -198,7 +198,7 @@ main {
 
 /* Seletor de classe: .botao-remover */
 .botao-remover {
-    background-color: #c62828;
+    background-color: #283dc6;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -208,7 +208,7 @@ main {
 }
 
 .botao-remover:hover {
-    background-color: #b71c1c;
+    background-color: #0fb64f;
 }
 
 /* Seletor de classe: .botao-editar */
@@ -805,4 +805,41 @@ footer a:hover {
     main {
         padding: 0 12px;
     }
+}
+/* ================================================
+   GUIÃO W3 — Validação JavaScript e Interatividade
+   ================================================ */
+
+/* Campo com erro de validação */
+.campo-erro {
+    border: 2px solid #c62828 !important;
+    background-color: #fff5f5;
+}
+
+/* Mensagem de erro por baixo do campo */
+.mensagem-erro {
+    display: block;
+    color: #c62828;
+    font-size: 13px;
+    margin-top: -4px;
+    margin-bottom: 6px;
+}
+
+/* Esconder elementos (usado no "Sobre o Projeto") */
+.escondido {
+    display: none;
+}
+
+/* Caixa do "Sobre o Projeto" */
+.caixa-sobre {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.caixa-sobre h3 {
+    color: #1a237e;
 }

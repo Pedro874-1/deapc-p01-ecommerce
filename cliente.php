@@ -22,7 +22,7 @@ require_once 'scripts/db.php';
         <h1>ShopOnline</h1>
         <nav>
             <a href="index.html">Início</a>
-            <a href="produtos.php">Catálogo</a>
+            <a href="catalogo.html">Catálogo</a>
             <?php if (isset($_SESSION['utilizador_id'])): ?>
                 <a href="scripts/logout.php">Logout</a>
             <?php else: ?>
@@ -37,24 +37,49 @@ require_once 'scripts/db.php';
 
         <?php if (!isset($_SESSION['utilizador_id'])): ?>
 
-            <!-- Utilizador não está autenticado -->
-            <div class="pagina-conta">
-                <section class="caixa-formulario">
-                    <h3>Iniciar Sessão</h3>
-                    <form action="scripts/login.php" method="post" class="formulario">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email"
-                               placeholder="o-seu-email@exemplo.com" required>
+<!-- Utilizador não está autenticado -->
+    <div class="pagina-conta">
+        <section class="caixa-formulario">
+            <h3>Iniciar Sessão</h3>
+            <form id="form-login" action="scripts/login.php" method="post" class="formulario" novalidate>
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email"
+                       placeholder="o-seu-email@exemplo.com">
+                <span class="mensagem-erro"></span>
 
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password"
-                               placeholder="A sua password" required>
+                <label for="password-login">Password:</label>
+                <input type="password" id="password-login" name="password"
+                       placeholder="A sua password">
+                <span class="mensagem-erro"></span>
 
-                        <button type="submit" class="botao">Entrar</button>
-                        <p>Não tem conta? <a href="cliente.html">Registe-se aqui</a></p>
-                    </form>
-                </section>
-            </div>
+                <button type="submit" class="botao">Entrar</button>
+                <p>Não tem conta? <a href="#registo">Regista-te abaixo ↓</a></p>
+            </form>
+        </section>
+
+        <section class="caixa-formulario" id="registo">
+            <h3>Criar Conta</h3>
+            <form id="form-registo" action="scripts/registo.php" method="post" class="formulario" novalidate>
+                <label for="nome-registo">Nome completo:</label>
+                <input type="text" id="nome-registo" name="nome">
+                <span class="mensagem-erro"></span>
+
+                <label for="email-registo">Email:</label>
+                <input type="email" id="email-registo" name="email">
+                <span class="mensagem-erro"></span>
+
+                <label for="pass-registo">Password:</label>
+                <input type="password" id="pass-registo" name="password">
+                <span class="mensagem-erro"></span>
+
+                <label for="pass-confirmar">Confirmar Password:</label>
+                <input type="password" id="pass-confirmar">
+                <span class="mensagem-erro"></span>
+
+                <button type="submit" class="botao">Criar Conta</button>
+            </form>
+        </section>
+    </div>
 
         <?php else: ?>
 
@@ -140,5 +165,6 @@ require_once 'scripts/db.php';
         <p>&copy; 2026 ShopOnline.</p>
     </footer>
 
+<script src="scripts/validacao.js"></script>
 </body>
 </html>

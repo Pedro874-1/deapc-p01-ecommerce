@@ -13,93 +13,85 @@
         <nav>
             <a href="index.html">Início</a>
             <a href="catalogo.html">Catálogo</a>
-            <a href="cliente.html">Login</a>
-            <a href="carrinho.html">Carrinho (0)</a>
+            <?php if (isset($_SESSION['utilizador_id'])): ?>
+                <a href="scripts/logout.php">Logout</a>
+            <?php else: ?>
+                <a href="cliente.html">Login</a>
+            <?php endif; ?>
+            <a href="carrinho.html">Carrinho</a>
         </nav>
     </header>
 
     <main>
         <h2>A minha Conta</h2>
 
-        <div class="pagina-conta">
+    
 
-            <section class="caixa-formulario">
-                <h3>Iniciar Sessão</h3>
-                <div class="formulario">
+<!-- Utilizador não está autenticado -->
+    <div class="pagina-conta">
+        <section class="caixa-formulario">
+            <h3>Iniciar Sessão</h3>
+            <form id="form-login" action="scripts/login.php" method="post" class="formulario" novalidate>
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email"
+                       placeholder="o-seu-email@exemplo.com">
+                <span class="mensagem-erro"></span>
 
-			<form action="scripts/registo.php" method="post" class="formulario">
-    <label for="nome-registo">Nome completo:</label>
-    <input type="text" id="nome-registo" name="nome"
-           placeholder="O seu nome" required>
+                <label for="password-login">Password:</label>
+                <input type="password" id="password-login" name="password"
+                       placeholder="A sua password">
+                <span class="mensagem-erro"></span>
 
-    <label for="email-registo">Email:</label>
-    <input type="email" id="email-registo" name="email"
-           placeholder="o-seu-email@exemplo.com" required>
+                <button type="submit" class="botao">Entrar</button>
+                <p>Não tem conta? <a href="#registo">Regista-te abaixo ↓</a></p>
+            </form>
+        </section>
 
-    <label for="pass-registo">Password:</label>
-    <input type="password" id="pass-registo" name="password"
-           placeholder="A sua password" required>
+        <section class="caixa-formulario" id="registo">
+            <h3>Criar Conta</h3>
+            <form id="form-registo" action="scripts/registo.php" method="post" class="formulario" novalidate>
+                <label for="nome-registo">Nome completo:</label>
+                <input type="text" id="nome-registo" name="nome">
+                <span class="mensagem-erro"></span>
 
-    <button type="submit" class="botao">Criar Conta</button>
-</form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="o-seu-email@exemplo.com">
+                <label for="email-registo">Email:</label>
+                <input type="email" id="email-registo" name="email">
+                <span class="mensagem-erro"></span>
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" placeholder="A sua password">
+                <label for="pass-registo">Password:</label>
+                <input type="password" id="pass-registo" name="password">
+                <span class="mensagem-erro"></span>
 
-                    <button class="botao">Entrar</button>
-                    <p>Não tem conta? <a href="#">Registe-se aqui</a></p>
-                </div>
-            </section>
+                <label for="pass-confirmar">Confirmar Password:</label>
+                <input type="password" id="pass-confirmar">
+                <span class="mensagem-erro"></span>
 
-            <section class="caixa-formulario">
-                <h3>Histórico de Encomendas</h3>
-                <p>Faça login para ver as suas encomendas.</p>
+                <button type="submit" class="botao">Criar Conta</button>
+            </form>
+        </section>
+    </div>
 
-                <table class="tabela-encomendas">
-                    <thead>
-                        <tr>
-                            <th>Nº</th>
-                            <th>Data</th>
-                            <th>Total</th>
-                            <th>Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#001</td>
-                            <td>12/05/2026</td>
-                            <td>344,99 €</td>
-                            <td>Enviado</td>
-                        </tr>
-                        <tr>
-                            <td>#002</td>
-                            <td>03/04/2026</td>
-                            <td>23,50 €</td>
-                            <td>Entregue</td>
-                        </tr>
-                    </tbody>
-                </table>
+        
 
-                <h3>Os meus Dados</h3>
-                <div class="formulario">
-                    <label for="nome-conta">Nome:</label>
-                    <input type="text" id="nome-conta" value="João Silva">
+    
 
-                    <label for="email-conta">Email:</label>
-                    <input type="email" id="email-conta" value="joao@email.com">
+                
+                        
+                        </tbody>
+                    </table>
+                </section>
 
-                    <button class="botao">Guardar alterações</button>
-                </div>
-            </section>
+        
 
-        </div>
+            </div>
+
+            
     </main>
 
     <footer>
-        <p>&copy; 2026 ShopOnline. Todos os direitos reservados.</p>
+        <p>&copy; 2026 ShopOnline.</p>
     </footer>
 
+<script src="scripts/validacao.js"></script>
 </body>
 </html>

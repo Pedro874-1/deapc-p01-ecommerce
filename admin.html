@@ -23,8 +23,35 @@
         <section id="produtos">
             <div class="secao-titulo">
                 <h2>Gestão de Produtos</h2>
-                <button class="botao">+ Adicionar Produto</button>
             </div>
+
+            <form id="form-produto" class="formulario" novalidate>
+                <h3>Adicionar Novo Produto</h3>
+
+                <label for="nome-produto">Nome do produto:</label>
+                <input type="text" id="nome-produto" name="nome">
+                <span class="mensagem-erro"></span>
+
+                <label for="categoria-produto">Categoria:</label>
+                <select id="categoria-produto" name="categoria">
+                    <option value="">Escolhe uma categoria</option>
+                    <option value="Electronica">Electrónica</option>
+                    <option value="Desporto">Desporto</option>
+                    <option value="Livros">Livros</option>
+                    <option value="Vestuario">Vestuário</option>
+                </select>
+                <span class="mensagem-erro"></span>
+
+                <label for="preco-produto">Preço (€):</label>
+                <input type="text" id="preco-produto" name="preco" placeholder="Ex: 29.99">
+                <span class="mensagem-erro"></span>
+
+                <label for="stock-produto">Stock inicial:</label>
+                <input type="text" id="stock-produto" name="stock" placeholder="Ex: 10">
+                <span class="mensagem-erro"></span>
+
+                <button type="submit" class="botao">Adicionar Produto</button>
+            </form>
 
             <table class="tabela-admin">
                 <thead>
@@ -153,6 +180,7 @@
 
     </main>
 
+<script src="scripts/validacao.js"></script>
 </body>
 </html>
 

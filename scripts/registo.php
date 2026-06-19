@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $nome     = trim($_POST['nome'] ?? '');
     $email    = trim($_POST['email'] ?? '');
-    $password = trim($_POST['password'] ?? '');
+    $password = trim($_POST['password'] ??'');
 
     // Verifica se os campos estão preenchidos
     if (empty($nome) || empty($email) || empty($password)) {

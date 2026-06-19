@@ -57,19 +57,29 @@
 			
 			<form action="scripts/checkout.php" method="post">
     <h3>Morada de Entrega</h3>
-    <div class="formulario">
+
+    <form id="form-checkout" action="scripts/checkout.php" method="post" class="formulario" novalidate>
         <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+        <input type="text" id="nome" name="nome" placeholder="O seu nome">
+        <span class="mensagem-erro"></span>
 
         <label for="morada">Morada:</label>
-        <input type="text" id="morada" name="morada" placeholder="Rua e número" required>
+        <input type="text" id="morada" name="morada" placeholder="Rua e número">
+        <span class="mensagem-erro"></span>
 
         <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+        <span class="mensagem-erro"></span>
 
         <label for="cp">Código Postal:</label>
-        <input type="text" id="cp" name="cp" placeholder="0000-000" required>
-    </div>
+        <input type="text" id="cp" name="cp" placeholder="0000-000">
+        <span class="mensagem-erro"></span>
+
+        <label for="telemovel">Telemóvel:</label>
+        <input type="tel" id="telemovel" name="telemovel" placeholder="9XX XXX XXX">
+        <span class="mensagem-erro"></span>
+    </form>
+
     <button type="submit" class="botao botao-finalizar">Finalizar Compra</button>
 </form>
                     <label for="nome">Nome completo:</label>
@@ -101,7 +111,7 @@
                 <label><input type="radio" name="pagamento"> MB Way</label>
                 <label><input type="radio" name="pagamento"> Transferência</label>
 
-                <button class="botao botao-finalizar">Finalizar Compra</button>
+                <button form="form-checkout" type="submit" class="botao botao-finalizar">Finalizar Compra</button>
             </aside>
 
         </div>
@@ -110,6 +120,7 @@
     <footer>
         <p>&copy; 2026 ShopOnline. Todos os direitos reservados.</p>
     </footer>
+<script src="scripts/validacao.js"></script>
 
 </body>
 </html>
